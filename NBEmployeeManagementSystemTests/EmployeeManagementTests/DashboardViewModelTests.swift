@@ -9,7 +9,7 @@ import Foundation
 import XCTest
 @testable import NBEmployeeManagementSystem
 
-class CurrencyConversionViewModelTests: XCTestCase {
+class DashboardViewModelTests: XCTestCase {
 
     private var viewModel: DashboardViewModel!
     private var mockEmployeeService: MockEmployeeService!
