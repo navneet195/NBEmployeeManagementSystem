@@ -1,0 +1,854 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4E1D70102B8647FA00E82004 /* NBEmployeeManagementSystemApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E1D700F2B8647FA00E82004 /* NBEmployeeManagementSystemApp.swift */; };
+		4E1D70142B8647FE00E82004 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E1D70132B8647FE00E82004 /* Assets.xcassets */; };
+		4E1D70182B8647FE00E82004 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E1D70172B8647FE00E82004 /* Preview Assets.xcassets */; };
+		4E1D70222B8647FF00E82004 /* NBEmployeeManagementSystemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E1D70212B8647FF00E82004 /* NBEmployeeManagementSystemTests.swift */; };
+		4E1D702C2B8647FF00E82004 /* NBEmployeeManagementSystemUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E1D702B2B8647FF00E82004 /* NBEmployeeManagementSystemUITests.swift */; };
+		4E1D702E2B8647FF00E82004 /* NBEmployeeManagementSystemUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E1D702D2B8647FF00E82004 /* NBEmployeeManagementSystemUITestsLaunchTests.swift */; };
+		4E1D70412B8648A200E82004 /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E1D70402B8648A200E82004 /* Employee.swift */; };
+		4E1D70432B86493400E82004 /* Workspace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E1D70422B86493400E82004 /* Workspace.swift */; };
+		4E1D70462B8671DD00E82004 /* EmployeeCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E1D70452B8671DD00E82004 /* EmployeeCardView.swift */; };
+		4E9922602B8684F50068718D /* EmployeeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E99225F2B8684F50068718D /* EmployeeService.swift */; };
+		4E9922622B86854D0068718D /* WorkspaceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9922612B86854D0068718D /* WorkspaceService.swift */; };
+		4E9922652B8685E70068718D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9922642B8685E70068718D /* Constants.swift */; };
+		4E9922682B8688320068718D /* SessionInterval.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9922672B8688320068718D /* SessionInterval.swift */; };
+		4E99226A2B8689140068718D /* NWPathMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9922692B8689140068718D /* NWPathMonitor.swift */; };
+		4E99226D2B8689920068718D /* StringHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E99226C2B8689920068718D /* StringHelper.swift */; };
+		4E99226F2B8696110068718D /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E99226E2B8696110068718D /* LoadingView.swift */; };
+		4E9922712B8696800068718D /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9922702B8696800068718D /* ErrorView.swift */; };
+		4E9922752B869A270068718D /* TabbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9922742B869A270068718D /* TabbarView.swift */; };
+		4E9922772B869A4C0068718D /* EmployeeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9922762B869A4C0068718D /* EmployeeListView.swift */; };
+		4E9922792B869A5A0068718D /* WorkspaceListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9922782B869A5A0068718D /* WorkspaceListView.swift */; };
+		4E9BBB912B86812B006713E4 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9BBB902B86812B006713E4 /* DashboardView.swift */; };
+		4E9BBB932B868142006713E4 /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9BBB922B868142006713E4 /* DashboardViewModel.swift */; };
+		4E9BBB962B8681E7006713E4 /* NBNetworking in Frameworks */ = {isa = PBXBuildFile; productRef = 4E9BBB952B8681E7006713E4 /* NBNetworking */; };
+		4EC2A72C2B86F51900BAFF54 /* WorkspaceCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC2A72B2B86F51900BAFF54 /* WorkspaceCardView.swift */; };
+		4EC2A7302B8723E900BAFF54 /* CacheAsyncImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC2A72F2B8723E900BAFF54 /* CacheAsyncImage.swift */; };
+		4EC2A7322B87360400BAFF54 /* EmployeeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC2A7312B87360400BAFF54 /* EmployeeDetailView.swift */; };
+		4EC2A7362B874C7100BAFF54 /* MockEmployeeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC2A7352B874C7100BAFF54 /* MockEmployeeService.swift */; };
+		4EC2A7382B874C9100BAFF54 /* MockWorkspaceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC2A7372B874C9100BAFF54 /* MockWorkspaceService.swift */; };
+		4EC2A73A2B874D9E00BAFF54 /* MockEmployee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC2A7392B874D9E00BAFF54 /* MockEmployee.swift */; };
+		4EC2A73C2B874DAD00BAFF54 /* MockWorkspace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC2A73B2B874DAD00BAFF54 /* MockWorkspace.swift */; };
+		4EC2A73E2B874ED700BAFF54 /* DashboardViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC2A73D2B874ED700BAFF54 /* DashboardViewModelTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4E1D701E2B8647FF00E82004 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4E1D70042B8647FA00E82004 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4E1D700B2B8647FA00E82004;
+			remoteInfo = NBEmployeeManagementSystem;
+		};
+		4E1D70282B8647FF00E82004 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4E1D70042B8647FA00E82004 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4E1D700B2B8647FA00E82004;
+			remoteInfo = NBEmployeeManagementSystem;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4E1D700C2B8647FA00E82004 /* NBEmployeeManagementSystem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NBEmployeeManagementSystem.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E1D700F2B8647FA00E82004 /* NBEmployeeManagementSystemApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBEmployeeManagementSystemApp.swift; sourceTree = "<group>"; };
+		4E1D70132B8647FE00E82004 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4E1D70152B8647FE00E82004 /* NBEmployeeManagementSystem.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NBEmployeeManagementSystem.entitlements; sourceTree = "<group>"; };
+		4E1D70172B8647FE00E82004 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4E1D701D2B8647FF00E82004 /* NBEmployeeManagementSystemTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NBEmployeeManagementSystemTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E1D70212B8647FF00E82004 /* NBEmployeeManagementSystemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBEmployeeManagementSystemTests.swift; sourceTree = "<group>"; };
+		4E1D70272B8647FF00E82004 /* NBEmployeeManagementSystemUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NBEmployeeManagementSystemUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E1D702B2B8647FF00E82004 /* NBEmployeeManagementSystemUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBEmployeeManagementSystemUITests.swift; sourceTree = "<group>"; };
+		4E1D702D2B8647FF00E82004 /* NBEmployeeManagementSystemUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBEmployeeManagementSystemUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4E1D70402B8648A200E82004 /* Employee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
+		4E1D70422B86493400E82004 /* Workspace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workspace.swift; sourceTree = "<group>"; };
+		4E1D70452B8671DD00E82004 /* EmployeeCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeCardView.swift; sourceTree = "<group>"; };
+		4E99225F2B8684F50068718D /* EmployeeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeService.swift; sourceTree = "<group>"; };
+		4E9922612B86854D0068718D /* WorkspaceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkspaceService.swift; sourceTree = "<group>"; };
+		4E9922642B8685E70068718D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		4E9922672B8688320068718D /* SessionInterval.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionInterval.swift; sourceTree = "<group>"; };
+		4E9922692B8689140068718D /* NWPathMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NWPathMonitor.swift; sourceTree = "<group>"; };
+		4E99226C2B8689920068718D /* StringHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringHelper.swift; sourceTree = "<group>"; };
+		4E99226E2B8696110068718D /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		4E9922702B8696800068718D /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		4E9922742B869A270068718D /* TabbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarView.swift; sourceTree = "<group>"; };
+		4E9922762B869A4C0068718D /* EmployeeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeListView.swift; sourceTree = "<group>"; };
+		4E9922782B869A5A0068718D /* WorkspaceListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkspaceListView.swift; sourceTree = "<group>"; };
+		4E9BBB902B86812B006713E4 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		4E9BBB922B868142006713E4 /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
+		4EC2A72B2B86F51900BAFF54 /* WorkspaceCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkspaceCardView.swift; sourceTree = "<group>"; };
+		4EC2A72D2B8703AB00BAFF54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		4EC2A72F2B8723E900BAFF54 /* CacheAsyncImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheAsyncImage.swift; sourceTree = "<group>"; };
+		4EC2A7312B87360400BAFF54 /* EmployeeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeDetailView.swift; sourceTree = "<group>"; };
+		4EC2A7352B874C7100BAFF54 /* MockEmployeeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockEmployeeService.swift; sourceTree = "<group>"; };
+		4EC2A7372B874C9100BAFF54 /* MockWorkspaceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockWorkspaceService.swift; sourceTree = "<group>"; };
+		4EC2A7392B874D9E00BAFF54 /* MockEmployee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockEmployee.swift; sourceTree = "<group>"; };
+		4EC2A73B2B874DAD00BAFF54 /* MockWorkspace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockWorkspace.swift; sourceTree = "<group>"; };
+		4EC2A73D2B874ED700BAFF54 /* DashboardViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModelTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4E1D70092B8647FA00E82004 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E9BBB962B8681E7006713E4 /* NBNetworking in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E1D701A2B8647FF00E82004 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E1D70242B8647FF00E82004 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4E1D70032B8647FA00E82004 = {
+			isa = PBXGroup;
+			children = (
+				4E1D700E2B8647FA00E82004 /* NBEmployeeManagementSystem */,
+				4E1D70202B8647FF00E82004 /* NBEmployeeManagementSystemTests */,
+				4E1D702A2B8647FF00E82004 /* NBEmployeeManagementSystemUITests */,
+				4E1D700D2B8647FA00E82004 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4E1D700D2B8647FA00E82004 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4E1D700C2B8647FA00E82004 /* NBEmployeeManagementSystem.app */,
+				4E1D701D2B8647FF00E82004 /* NBEmployeeManagementSystemTests.xctest */,
+				4E1D70272B8647FF00E82004 /* NBEmployeeManagementSystemUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4E1D700E2B8647FA00E82004 /* NBEmployeeManagementSystem */ = {
+			isa = PBXGroup;
+			children = (
+				4EC2A72D2B8703AB00BAFF54 /* Info.plist */,
+				4E1D703D2B86483800E82004 /* EmployeeManagement */,
+				4E99225E2B8684D00068718D /* Networking */,
+				4E1D703E2B86485200E82004 /* Appearance */,
+				4E1D70132B8647FE00E82004 /* Assets.xcassets */,
+				4E1D70152B8647FE00E82004 /* NBEmployeeManagementSystem.entitlements */,
+				4E1D70162B8647FE00E82004 /* Preview Content */,
+			);
+			path = NBEmployeeManagementSystem;
+			sourceTree = "<group>";
+		};
+		4E1D70162B8647FE00E82004 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				4E1D70172B8647FE00E82004 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4E1D70202B8647FF00E82004 /* NBEmployeeManagementSystemTests */ = {
+			isa = PBXGroup;
+			children = (
+				4EC2A7342B874C4B00BAFF54 /* MockService */,
+				4EC2A7332B87459500BAFF54 /* EmployeeManagementTests */,
+				4E1D70212B8647FF00E82004 /* NBEmployeeManagementSystemTests.swift */,
+			);
+			path = NBEmployeeManagementSystemTests;
+			sourceTree = "<group>";
+		};
+		4E1D702A2B8647FF00E82004 /* NBEmployeeManagementSystemUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4E1D702B2B8647FF00E82004 /* NBEmployeeManagementSystemUITests.swift */,
+				4E1D702D2B8647FF00E82004 /* NBEmployeeManagementSystemUITestsLaunchTests.swift */,
+			);
+			path = NBEmployeeManagementSystemUITests;
+			sourceTree = "<group>";
+		};
+		4E1D703A2B86480900E82004 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4E1D70402B8648A200E82004 /* Employee.swift */,
+				4E1D70422B86493400E82004 /* Workspace.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4E1D703B2B86481000E82004 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4E9BBB922B868142006713E4 /* DashboardViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		4E1D703C2B86481900E82004 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4E9922762B869A4C0068718D /* EmployeeListView.swift */,
+				4E9922782B869A5A0068718D /* WorkspaceListView.swift */,
+				4E9BBB902B86812B006713E4 /* DashboardView.swift */,
+				4EC2A7312B87360400BAFF54 /* EmployeeDetailView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4E1D703D2B86483800E82004 /* EmployeeManagement */ = {
+			isa = PBXGroup;
+			children = (
+				4EC2A72E2B8723B100BAFF54 /* Cache */,
+				4E1D70442B866D2E00E82004 /* Components */,
+				4E1D703C2B86481900E82004 /* View */,
+				4E1D703B2B86481000E82004 /* ViewModel */,
+				4E1D703A2B86480900E82004 /* Model */,
+			);
+			path = EmployeeManagement;
+			sourceTree = "<group>";
+		};
+		4E1D703E2B86485200E82004 /* Appearance */ = {
+			isa = PBXGroup;
+			children = (
+				4E99226B2B86897C0068718D /* Extension */,
+				4E9922662B86881D0068718D /* SessionIntervalHandler */,
+				4E9922632B8685CD0068718D /* Constant */,
+				4E1D703F2B86488100E82004 /* MainView */,
+			);
+			path = Appearance;
+			sourceTree = "<group>";
+		};
+		4E1D703F2B86488100E82004 /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				4E1D700F2B8647FA00E82004 /* NBEmployeeManagementSystemApp.swift */,
+			);
+			path = MainView;
+			sourceTree = "<group>";
+		};
+		4E1D70442B866D2E00E82004 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				4E1D70452B8671DD00E82004 /* EmployeeCardView.swift */,
+				4EC2A72B2B86F51900BAFF54 /* WorkspaceCardView.swift */,
+				4E9922742B869A270068718D /* TabbarView.swift */,
+				4E99226E2B8696110068718D /* LoadingView.swift */,
+				4E9922702B8696800068718D /* ErrorView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		4E99225E2B8684D00068718D /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				4E99225F2B8684F50068718D /* EmployeeService.swift */,
+				4E9922612B86854D0068718D /* WorkspaceService.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		4E9922632B8685CD0068718D /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				4E9922642B8685E70068718D /* Constants.swift */,
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
+		4E9922662B86881D0068718D /* SessionIntervalHandler */ = {
+			isa = PBXGroup;
+			children = (
+				4E9922672B8688320068718D /* SessionInterval.swift */,
+				4E9922692B8689140068718D /* NWPathMonitor.swift */,
+			);
+			path = SessionIntervalHandler;
+			sourceTree = "<group>";
+		};
+		4E99226B2B86897C0068718D /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				4E99226C2B8689920068718D /* StringHelper.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		4EC2A72E2B8723B100BAFF54 /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+				4EC2A72F2B8723E900BAFF54 /* CacheAsyncImage.swift */,
+			);
+			path = Cache;
+			sourceTree = "<group>";
+		};
+		4EC2A7332B87459500BAFF54 /* EmployeeManagementTests */ = {
+			isa = PBXGroup;
+			children = (
+				4EC2A73D2B874ED700BAFF54 /* DashboardViewModelTests.swift */,
+			);
+			path = EmployeeManagementTests;
+			sourceTree = "<group>";
+		};
+		4EC2A7342B874C4B00BAFF54 /* MockService */ = {
+			isa = PBXGroup;
+			children = (
+				4EC2A7352B874C7100BAFF54 /* MockEmployeeService.swift */,
+				4EC2A7372B874C9100BAFF54 /* MockWorkspaceService.swift */,
+				4EC2A7392B874D9E00BAFF54 /* MockEmployee.swift */,
+				4EC2A73B2B874DAD00BAFF54 /* MockWorkspace.swift */,
+			);
+			path = MockService;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4E1D700B2B8647FA00E82004 /* NBEmployeeManagementSystem */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4E1D70312B8647FF00E82004 /* Build configuration list for PBXNativeTarget "NBEmployeeManagementSystem" */;
+			buildPhases = (
+				4E1D70082B8647FA00E82004 /* Sources */,
+				4E1D70092B8647FA00E82004 /* Frameworks */,
+				4E1D700A2B8647FA00E82004 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NBEmployeeManagementSystem;
+			packageProductDependencies = (
+				4E9BBB952B8681E7006713E4 /* NBNetworking */,
+			);
+			productName = NBEmployeeManagementSystem;
+			productReference = 4E1D700C2B8647FA00E82004 /* NBEmployeeManagementSystem.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4E1D701C2B8647FF00E82004 /* NBEmployeeManagementSystemTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4E1D70342B8647FF00E82004 /* Build configuration list for PBXNativeTarget "NBEmployeeManagementSystemTests" */;
+			buildPhases = (
+				4E1D70192B8647FF00E82004 /* Sources */,
+				4E1D701A2B8647FF00E82004 /* Frameworks */,
+				4E1D701B2B8647FF00E82004 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4E1D701F2B8647FF00E82004 /* PBXTargetDependency */,
+			);
+			name = NBEmployeeManagementSystemTests;
+			productName = NBEmployeeManagementSystemTests;
+			productReference = 4E1D701D2B8647FF00E82004 /* NBEmployeeManagementSystemTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4E1D70262B8647FF00E82004 /* NBEmployeeManagementSystemUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4E1D70372B8647FF00E82004 /* Build configuration list for PBXNativeTarget "NBEmployeeManagementSystemUITests" */;
+			buildPhases = (
+				4E1D70232B8647FF00E82004 /* Sources */,
+				4E1D70242B8647FF00E82004 /* Frameworks */,
+				4E1D70252B8647FF00E82004 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4E1D70292B8647FF00E82004 /* PBXTargetDependency */,
+			);
+			name = NBEmployeeManagementSystemUITests;
+			productName = NBEmployeeManagementSystemUITests;
+			productReference = 4E1D70272B8647FF00E82004 /* NBEmployeeManagementSystemUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4E1D70042B8647FA00E82004 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					4E1D700B2B8647FA00E82004 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					4E1D701C2B8647FF00E82004 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 4E1D700B2B8647FA00E82004;
+					};
+					4E1D70262B8647FF00E82004 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 4E1D700B2B8647FA00E82004;
+					};
+				};
+			};
+			buildConfigurationList = 4E1D70072B8647FA00E82004 /* Build configuration list for PBXProject "NBEmployeeManagementSystem" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4E1D70032B8647FA00E82004;
+			packageReferences = (
+				4E9BBB942B8681E7006713E4 /* XCRemoteSwiftPackageReference "NBNetworking" */,
+			);
+			productRefGroup = 4E1D700D2B8647FA00E82004 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4E1D700B2B8647FA00E82004 /* NBEmployeeManagementSystem */,
+				4E1D701C2B8647FF00E82004 /* NBEmployeeManagementSystemTests */,
+				4E1D70262B8647FF00E82004 /* NBEmployeeManagementSystemUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4E1D700A2B8647FA00E82004 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E1D70182B8647FE00E82004 /* Preview Assets.xcassets in Resources */,
+				4E1D70142B8647FE00E82004 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E1D701B2B8647FF00E82004 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E1D70252B8647FF00E82004 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4E1D70082B8647FA00E82004 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4EC2A7302B8723E900BAFF54 /* CacheAsyncImage.swift in Sources */,
+				4E9922772B869A4C0068718D /* EmployeeListView.swift in Sources */,
+				4E99226A2B8689140068718D /* NWPathMonitor.swift in Sources */,
+				4E9922682B8688320068718D /* SessionInterval.swift in Sources */,
+				4E9922752B869A270068718D /* TabbarView.swift in Sources */,
+				4E9922622B86854D0068718D /* WorkspaceService.swift in Sources */,
+				4E9922792B869A5A0068718D /* WorkspaceListView.swift in Sources */,
+				4E9922602B8684F50068718D /* EmployeeService.swift in Sources */,
+				4E99226F2B8696110068718D /* LoadingView.swift in Sources */,
+				4E99226D2B8689920068718D /* StringHelper.swift in Sources */,
+				4E9BBB912B86812B006713E4 /* DashboardView.swift in Sources */,
+				4E1D70432B86493400E82004 /* Workspace.swift in Sources */,
+				4E9922652B8685E70068718D /* Constants.swift in Sources */,
+				4E9922712B8696800068718D /* ErrorView.swift in Sources */,
+				4E1D70462B8671DD00E82004 /* EmployeeCardView.swift in Sources */,
+				4EC2A7322B87360400BAFF54 /* EmployeeDetailView.swift in Sources */,
+				4EC2A72C2B86F51900BAFF54 /* WorkspaceCardView.swift in Sources */,
+				4E1D70412B8648A200E82004 /* Employee.swift in Sources */,
+				4E1D70102B8647FA00E82004 /* NBEmployeeManagementSystemApp.swift in Sources */,
+				4E9BBB932B868142006713E4 /* DashboardViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E1D70192B8647FF00E82004 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4EC2A7382B874C9100BAFF54 /* MockWorkspaceService.swift in Sources */,
+				4EC2A73C2B874DAD00BAFF54 /* MockWorkspace.swift in Sources */,
+				4E1D70222B8647FF00E82004 /* NBEmployeeManagementSystemTests.swift in Sources */,
+				4EC2A73E2B874ED700BAFF54 /* DashboardViewModelTests.swift in Sources */,
+				4EC2A7362B874C7100BAFF54 /* MockEmployeeService.swift in Sources */,
+				4EC2A73A2B874D9E00BAFF54 /* MockEmployee.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E1D70232B8647FF00E82004 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E1D702E2B8647FF00E82004 /* NBEmployeeManagementSystemUITestsLaunchTests.swift in Sources */,
+				4E1D702C2B8647FF00E82004 /* NBEmployeeManagementSystemUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4E1D701F2B8647FF00E82004 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4E1D700B2B8647FA00E82004 /* NBEmployeeManagementSystem */;
+			targetProxy = 4E1D701E2B8647FF00E82004 /* PBXContainerItemProxy */;
+		};
+		4E1D70292B8647FF00E82004 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4E1D700B2B8647FA00E82004 /* NBEmployeeManagementSystem */;
+			targetProxy = 4E1D70282B8647FF00E82004 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		4E1D702F2B8647FF00E82004 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4E1D70302B8647FF00E82004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		4E1D70322B8647FF00E82004 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = NBEmployeeManagementSystem/NBEmployeeManagementSystem.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"NBEmployeeManagementSystem/Preview Content\"";
+				DEVELOPMENT_TEAM = 683TVH5AU5;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NBEmployeeManagementSystem/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = DirectoryApp;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 12.7;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.NBEmployeeManagementSystem;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4E1D70332B8647FF00E82004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = NBEmployeeManagementSystem/NBEmployeeManagementSystem.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"NBEmployeeManagementSystem/Preview Content\"";
+				DEVELOPMENT_TEAM = 683TVH5AU5;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NBEmployeeManagementSystem/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = DirectoryApp;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 12.7;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.NBEmployeeManagementSystem;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4E1D70352B8647FF00E82004 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 683TVH5AU5;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MACOSX_DEPLOYMENT_TARGET = 12.7;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.NBEmployeeManagementSystemTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NBEmployeeManagementSystem.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/NBEmployeeManagementSystem";
+			};
+			name = Debug;
+		};
+		4E1D70362B8647FF00E82004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 683TVH5AU5;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MACOSX_DEPLOYMENT_TARGET = 12.7;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.NBEmployeeManagementSystemTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NBEmployeeManagementSystem.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/NBEmployeeManagementSystem";
+			};
+			name = Release;
+		};
+		4E1D70382B8647FF00E82004 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 683TVH5AU5;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MACOSX_DEPLOYMENT_TARGET = 12.7;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.NBEmployeeManagementSystemUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NBEmployeeManagementSystem;
+			};
+			name = Debug;
+		};
+		4E1D70392B8647FF00E82004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 683TVH5AU5;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MACOSX_DEPLOYMENT_TARGET = 12.7;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.NBEmployeeManagementSystemUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NBEmployeeManagementSystem;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4E1D70072B8647FA00E82004 /* Build configuration list for PBXProject "NBEmployeeManagementSystem" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E1D702F2B8647FF00E82004 /* Debug */,
+				4E1D70302B8647FF00E82004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4E1D70312B8647FF00E82004 /* Build configuration list for PBXNativeTarget "NBEmployeeManagementSystem" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E1D70322B8647FF00E82004 /* Debug */,
+				4E1D70332B8647FF00E82004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4E1D70342B8647FF00E82004 /* Build configuration list for PBXNativeTarget "NBEmployeeManagementSystemTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E1D70352B8647FF00E82004 /* Debug */,
+				4E1D70362B8647FF00E82004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4E1D70372B8647FF00E82004 /* Build configuration list for PBXNativeTarget "NBEmployeeManagementSystemUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E1D70382B8647FF00E82004 /* Debug */,
+				4E1D70392B8647FF00E82004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4E9BBB942B8681E7006713E4 /* XCRemoteSwiftPackageReference "NBNetworking" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/navneet195/NBNetworking.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4E9BBB952B8681E7006713E4 /* NBNetworking */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4E9BBB942B8681E7006713E4 /* XCRemoteSwiftPackageReference "NBNetworking" */;
+			productName = NBNetworking;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 4E1D70042B8647FA00E82004 /* Project object */;
+}
