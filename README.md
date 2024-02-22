@@ -4,7 +4,7 @@ SwiftUI - NBEmployeeManagementSystem
 
 This represents the conventional pod structure, including assets, classes, and unit tests.
 
-Add this ![ Alt EcommerceApp Demo](EcommerceApp.gif) / ! [](EcommerceApp.gif)
+Add this ![ Alt DirectoryApp Demo](DirectoryApp.gif) / ! [](DirectoryApp.gif)
 
 ### Assets
 - **Colors**: Color palette for the app.
