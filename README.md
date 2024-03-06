@@ -15,4 +15,4 @@ Add this ![ Alt DirectoryApp Demo](DirectoryApp.gif) / ! [](DirectoryApp.gif)
 
 ## Versions
 
-S.No | Date | Dependency Name | Version | Tag
+S.No | Date | Dependency Name 
