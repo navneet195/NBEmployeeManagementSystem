@@ -13,6 +13,3 @@ Add this ![ Alt DirectoryApp Demo](DirectoryApp.gif) / ! [](DirectoryApp.gif)
 - **JSON**: Files used for stubbing tests.
 
 
-## Versions
-
-S.No | Date | Dependency Name | Version | Tag
